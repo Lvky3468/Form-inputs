@@ -19,12 +19,29 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-  form{
-  width:90%;
+  form {
+    width: 90%;
   }
 
-  table{
-    width:350px;
+  table {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 6px;
+  }
+
+  #output p {
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+  }
+
+  img {
+    width: 150px;
+    height: auto;
   }
 }
 
@@ -51,7 +68,8 @@ img {
 
 table {
   border-collapse: collapse;
-  width: 600px;
+  width: 90%;
+  max-width: 600px;
   background-color: white;
   margin: auto;
 }
@@ -74,4 +92,10 @@ input[type="submit"] {
   width: 100px;
   display: block;
   margin: 10px auto;
+}
+#aboutProject {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
 }
