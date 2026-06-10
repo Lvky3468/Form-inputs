@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="titleSection" align="center">
+      <h1>User Profile Generator</h1>
+      <p>Fill in your details to generate a profile summary.</p>
+    </header>
+    <form id="form">
+      <div class="inputData">
+        <label>Name</label><input type="text" id="name" required />
+      </div>
+      <div class="inputData">
+        <label>Age</label><input type="number" id="age" required />
+      </div>
+      <div class="inputData">
+        <label>email</label><input type="email" id="email" required />
+      </div>
+      <div class="inputData">
+        <label>contact</label
+        ><input type="tel" maxlength="10" id="contact" required />
+      </div>
+      <div class="inputData">
+        <label for="">gender</label>
+        <div>
+          <input type="radio" id="male" value="male" name="gender" required />
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="female"
+            value="female"
+            name="gender"
+            required
+          /><label for="female">Female</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="other"
+            value="other"
+            name="gender"
+            required
+          /><label for="other">Others</label>
+        </div>
+      </div>
+      <div class="inputData">
+        <label for="state">state</label>
+        <select id="state" name="state">
+          <option value="">-- Select State --</option>
+
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+          <option value="Assam">Assam</option>
+          <option value="Bihar">Bihar</option>
+          <option value="Chhattisgarh">Chhattisgarh</option>
+          <option value="Goa">Goa</option>
+          <option value="Gujarat">Gujarat</option>
+          <option value="Haryana">Haryana</option>
+          <option value="Himachal Pradesh">Himachal Pradesh</option>
+          <option value="Jharkhand">Jharkhand</option>
+          <option value="Karnataka">Karnataka</option>
+          <option value="Kerala">Kerala</option>
+          <option value="Madhya Pradesh">Madhya Pradesh</option>
+          <option value="Maharashtra">Maharashtra</option>
+          <option value="Manipur">Manipur</option>
+          <option value="Meghalaya">Meghalaya</option>
+          <option value="Mizoram">Mizoram</option>
+          <option value="Nagaland">Nagaland</option>
+          <option value="Odisha">Odisha</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Rajasthan">Rajasthan</option>
+          <option value="Sikkim">Sikkim</option>
+          <option value="Tamil Nadu">Tamil Nadu</option>
+          <option value="Telangana">Telangana</option>
+          <option value="Tripura">Tripura</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Uttarakhand">Uttarakhand</option>
+          <option value="West Bengal">West Bengal</option>
+        </select>
+      </div>
+      <div class="inputData">
+        <label>country</label>
+        <input type="text" id="country" />
+      </div>
+      <div class="inputData">
+        <label>languages</label>
+        <div>
+          <input type="checkbox" value="english" name="language" id="english" />
+          <label for="english">English</label>
+        </div>
+        <div>
+          <input type="checkbox" value="hindi" name="language" id="hindi" />
+          <label for="hindi">Hindi</label>
+        </div>
+        <div>
+          <input type="checkbox" value="telugu" name="language" id="telugu" />
+          <label for="telugu">Telugu</label>
+        </div>
+      </div>
+      <div class="inputData">
+        <label>password</label>
+        <input type="password" minlength="8" />
+      </div>
+      <div class="inputData">
+        <label>profile picture</label>
+        <input type="file" id="profieimg" accept="image/*" />
+      </div>
+      <div class="inputData">
+        <label>about</label>
+        <textarea id="about" rows="5" cols="30"></textarea>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <div id="output"></div>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
